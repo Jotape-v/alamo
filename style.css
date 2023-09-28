@@ -6,7 +6,7 @@
 }
 :root {
     --primary-color: green;
-    
+    color-scheme: only light;
 }
 body {
     font-family: 'Sora', sans-serif;
