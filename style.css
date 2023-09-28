@@ -5,7 +5,7 @@
     outline: 0;
 }
 :root {
-    --primary-color: linear-gradient(90deg, rgba(13,103,53,1) 0%, rgba(2,190,84,1) 100%);
+    --primary-color: #671DF7;
     color-scheme: light;
 }
 body {
@@ -67,7 +67,15 @@ i {
     margin-top: 100px;
 }
 .header-icons {
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.header-icons p {
+    color: white;
+    margin-top: 100px;
+    cursor: pointer;
 }
 .header-icons:hover {
     animation: scaleButton 0.8s alternate infinite;
@@ -444,8 +452,8 @@ i {
         width: 100px;
     }
     .bg-home::before {
-        background-position-x: 75%;
-        background-position-y: 175px;
+        background-position-x: 65%;
+        /* background-position-y: 70px; */
 
     }
 
