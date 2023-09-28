@@ -72,7 +72,7 @@ i {
     justify-content: center;
     gap: 10px;
 }
-.header-icons p {
+.header-icons .inst {
     color: white;
     margin-top: 100px;
     cursor: pointer;
