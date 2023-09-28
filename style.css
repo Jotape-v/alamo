@@ -85,7 +85,7 @@ i {
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(59, 7, 143, 0.274), #000), url("/assets/Background.svg");
+    background-image: linear-gradient(to bottom, rgba(59, 7, 143, 0.274), #000), url("/assets/Background.jpg");
     left: 0;
     top: 0;
     width: 100%;
