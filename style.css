@@ -167,8 +167,8 @@ i {
 .h-2 {
     font-family: "kaneda-gothic", sans-serif;
     color: #671DF7;
-    font-weight: 300;
-    font-size: 186px;
+    /* font-weight: 300; */
+    font-size: 165px;
     text-transform: uppercase;
     margin-top: -55px;
 
@@ -480,8 +480,8 @@ i {
 
     .h-2 {
         font-family: "kaneda-gothic", sans-serif;
-        font-weight: 300;
-        font-size: 146px;
+        /* font-weight: 300; */
+        font-size: 121px;
         text-transform: uppercase;
         margin-top: -35px;
     }
@@ -531,7 +531,7 @@ i {
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 458px) {
     .header-logo {
         width: 100px;
     }
@@ -565,10 +565,10 @@ i {
 
     .h-2 {
         font-family: "kaneda-gothic", sans-serif;
-        font-weight: 300;
-        font-size: 106px;
+        
+        font-size: 95px;
         text-transform: uppercase;
-        margin-top: -35px;
+        margin-top: -25px;
     }
 
     .h-1 {
@@ -579,7 +579,7 @@ i {
     }
 
     .h-text {
-        font-size: 15px;
+        font-size: 17px;
         max-width: 315px;
         margin-bottom: 76px;
     }
