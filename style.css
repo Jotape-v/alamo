@@ -468,7 +468,7 @@ i {
 @media screen and (max-width: 780px) {
     .hero {
         color: white;
-        min-height: 83vh;
+        min-height: 75vh;
 
         display: flex;
         flex-direction: column;
@@ -538,7 +538,7 @@ i {
 
     .bg-home::before {
         background-position-x: 80%;
-        background-position-y: 40px;
+        background-position-y: 15px;
 
     }
 
