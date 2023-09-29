@@ -4,10 +4,12 @@
     box-sizing: content-box;
     outline: 0;
 }
+
 :root {
     --primary-color: #671DF7;
     color-scheme: light;
 }
+
 body {
     font-family: 'Sora', sans-serif;
     width: 100%;
@@ -66,17 +68,20 @@ i {
     height: 60px;
     margin-top: 100px;
 }
+
 .header-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
+
 .header-icons .inst {
     color: white;
     margin-top: 100px;
     cursor: pointer;
 }
+
 .header-icons:hover {
     animation: scaleButton 0.8s alternate infinite;
 }
@@ -103,9 +108,10 @@ i {
     z-index: -1;
     background-size: cover;
     background-repeat: none;
-    /* background-position: 50% 0; */
+    background-position-y: 95%;
     /* opacity: 0.9; */
 }
+
 .rasgo {
     position: relative;
     background-image: url(/assets/rasgo.svg);
@@ -115,13 +121,13 @@ i {
 
 .hero {
     color: white;
-    min-height: 85vh;
+    min-height: 95vh;
 
     display: flex;
     flex-direction: column;
 
-    margin: 141px auto 0px auto;
-    gap: 20px;
+    margin: 55px auto 0px auto;
+    /* gap: 20px; */
 }
 
 .hero a::before {
@@ -143,38 +149,88 @@ i {
     transform: rotate(-20deg) translate(630px, 220px);
 }
 
-.hero .text {
-    width: 650px;
-}
-.hero .text2 {
-    display: none;
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.hero h1 {
+    overflow: hidden;
+}
+
+.container-text {
+    display: inline-block;
+    width: 569px;
+}
+
+.h-2 {
+    font-family: "kaneda-gothic", sans-serif;
+    color: #671DF7;
+    font-weight: 300;
+    font-size: 186px;
+    text-transform: uppercase;
+    margin-top: -55px;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+.h-1 {
+    font-family: "kaneda-gothic", sans-serif;
+    font-weight: 500;
+    font-size: 148px;
+    text-transform: uppercase;
+
+}
+
+.h-text {
+    font-size: 31px;
+    max-width: 569px;
+    margin-bottom: 66px;
+    font-weight: 300;
+}
+
+.h-text strong {
+    font-weight: 600;
+}
+
+
 .job1 {
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 51%, rgba(103,29,247,1) 100%), url(/assets/job1.png);
-    width: 100%;        
-    height: 370px; 
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 51%, rgba(103, 29, 247, 1) 100%), url(/assets/job1.png);
+    width: 100%;
+    height: 370px;
     background-size: cover;
     border-radius: 10px;
 }
+
 .job2 {
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 51%, rgba(103,29,247,1) 100%), url(/assets/job2.png);
-    width: 100%;        
-    height: 370px; 
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 51%, rgba(103, 29, 247, 1) 100%), url(/assets/job2.png);
+    width: 100%;
+    height: 370px;
     background-size: cover;
     border-radius: 10px;
 }
+
 .job3 {
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 51%, rgba(103,29,247,1) 100%), url(/assets/job3.png);
-    width: 100%;        
-    height: 370px; 
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 51%, rgba(103, 29, 247, 1) 100%), url(/assets/job3.png);
+    width: 100%;
+    height: 370px;
     background-size: cover;
     border-radius: 10px;
 }
 
 .button-contact {
     max-width: 370px;
-    padding: 10px 134px;
+    padding: 10px 90px;
     text-align: center;
     color: #fff;
     background: var(--primary-color);
@@ -186,17 +242,13 @@ i {
     overflow: hidden;
 }
 
-.button-contact:hover {
-    animation: scaleButton 0.8s alternate infinite;
-}
-
 @keyframes scaleButton {
     from {
         transform: scale(1);
     }
 
     to {
-        transform: scale(1.07);
+        transform: scale(1.04);
     }
 }
 
@@ -314,15 +366,15 @@ i {
 }
 
 .rasgo2 {
-    
-    
+
+
     background-image: url(/assets/rasgo2.svg);
     background-repeat: no-repeat;
-    
+
 }
 
 .sobre {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,6 +394,7 @@ i {
     width: 100%;
     max-width: 300px;
 }
+
 .sobre a::before {
     content: '';
     position: absolute;
@@ -373,15 +426,17 @@ i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     padding: 38px 0;
     gap: 10px;
     color: #fff;
     height: 2px;
 }
+
 .footer img {
     width: 150px;
 }
+
 .footer p {
     font-size: 12px;
 }
@@ -413,48 +468,77 @@ i {
 @media screen and (max-width: 780px) {
     .hero {
         color: white;
-        min-height: 70vh;
+        min-height: 83vh;
 
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
 
-        margin: 100px auto 50px auto;
-        gap: 140px;
+        margin: 30px auto 50px 15px;
+        /* gap: 140px; */
     }
 
-    .hero .text {
-        width: 550px;
+    .h-2 {
+        font-family: "kaneda-gothic", sans-serif;
+        font-weight: 300;
+        font-size: 146px;
+        text-transform: uppercase;
+        margin-top: -35px;
     }
+
+    .h-1 {
+        font-family: "kaneda-gothic", sans-serif;
+        font-weight: 500;
+        font-size: 108px;
+        text-transform: uppercase;
+    }
+
+    .h-text {
+        font-size: 25px;
+        max-width: 440px;
+        margin-bottom: 46px;
+    }
+
+    .button-contact {
+        padding: 10px 30px;
+    }
+
     .servics {
 
         flex-direction: column;
     }
 }
-@media screen and (max-width: 546px){
-    .hero .text {
-        width: 460px;
-        
+
+@media screen and (max-width: 546px) {
+    .bg-home::before {
+        background-position-x: 47%;
+
+
     }
+
     .hero {
         margin-top: 70px;
-        
+
     }
+
     .about-content {
         width: 450px;
     }
+
     .button-contact {
-        
-        padding: 10px 70px;
+
+        padding: 10px 30px;
     }
 }
+
 @media screen and (max-width: 440px) {
     .header-logo {
         width: 100px;
     }
+
     .bg-home::before {
-        background-position-x: 65%;
-        /* background-position-y: 70px; */
+        background-position-x: 80%;
+        background-position-y: 40px;
 
     }
 
@@ -475,16 +559,29 @@ i {
     }
 
     .hero {
-        margin: 100px auto 50px auto;
+        margin: 30px auto 50px auto;
+        align-items: center;
     }
 
-    .hero .text {
-        
-        display: none;
+    .h-2 {
+        font-family: "kaneda-gothic", sans-serif;
+        font-weight: 300;
+        font-size: 106px;
+        text-transform: uppercase;
+        margin-top: -35px;
     }
-    .hero .text2 {
-        display: block;
-        width: 370px;
+
+    .h-1 {
+        font-family: "kaneda-gothic", sans-serif;
+        font-weight: 500;
+        font-size: 85px;
+        text-transform: uppercase;
+    }
+
+    .h-text {
+        font-size: 15px;
+        max-width: 315px;
+        margin-bottom: 76px;
     }
 
     .button-contact {
@@ -527,13 +624,14 @@ i {
         font-size: 16px;
         text-align: start;
     }
+
     .btn-sobre {
         margin-top: 50px;
         margin-bottom: 100px;
     }
 
     .footer {
-        
+
         padding: 20px 0;
         gap: 5px;
     }
@@ -550,8 +648,32 @@ i {
 }
 
 @media screen and (max-width: 380px) {
-    .hero .text2 {
-        width: 330px;
+    .bg-home::before {
+        background-position: 60%;
+        /*  background-position-y: 70px; */
+
+    }
+
+    .header-content img {
+        margin-top: 50px;
+    }
+
+    i {
+        color: white;
+        margin-top: 50px;
+
+    }
+
+    .vl {
+        border-left: 3px solid #fff;
+        height: 60px;
+        margin-top: 50px;
+    }
+
+    .header-icons .inst {
+        color: white;
+        margin-top: 50px;
+        cursor: pointer;
     }
 
     .about-content {
