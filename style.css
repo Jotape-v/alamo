@@ -161,7 +161,7 @@ i {
 
 .container-text {
     display: inline-block;
-    width: 569px;
+    max-width: 569px;
 }
 
 .h-2 {
