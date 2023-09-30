@@ -649,6 +649,7 @@ i {
     }
 
     .btn-sobre {
+        margin-left: 55px;
         margin-top: 50px;
         margin-bottom: 100px;
     }
@@ -701,5 +702,8 @@ i {
 
     .about-content {
         width: 320px;
+    }
+    .btn-sobre {
+        margin-left: 40px;
     }
 }
