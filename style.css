@@ -172,7 +172,7 @@ i {
 .h-2 {
     font-family: "kaneda-gothic", sans-serif;
     color: #671DF7;
-    /* font-weight: 300; */
+    font-weight: 500;
     font-size: 165px;
     text-transform: uppercase;
     margin-top: -55px;
