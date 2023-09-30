@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://use.typekit.net/nrz8bic.css">
-
+    
     <meta name="color-scheme" content="only light">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
     <title>Álamo - Sua Agência de Marketing Digital</title>
     <link rel="icon" href="/assets/icon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -57,9 +58,12 @@
                     <p class="h-text">
                         Descubra os <strong>Benefícios</strong> do Método de <strong>Decolagem de Vendas.</strong>
                     </p>
+                    <!-- Calendly link widget begin -->
 
-                    <a href="https://calendly.com/agencia-alamo" class="button-contact" target="_blank">Quero vender
-                        mais</a>
+                    
+                    <a class="button-contact" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/agencia-alamo/30min'});return false;">Quero vender mais</a>
+                    <!-- Calendly link widget end -->
+                   
 
                 </main>
             </header>
@@ -145,8 +149,7 @@
                     estratégias personalizadas para aumentar visibilidade, atrair clientes qualificados e converter
                     leads em
                     vendas.</p>
-                <a href="https://calendly.com/agencia-alamo" class="button-contact btn-sobre" target="_blank">Marcar
-                    Reunião</a>
+                    <a class="button-contact btn-sobre" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/agencia-alamo/30min'});return false;">Quero vender mais</a>
             </div>
 
         </div>
@@ -159,6 +162,7 @@
         <p>Copyright 2023 © Álamo. Todos os direitos reservados. Desenvolvido por Álamo.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 
 </html>
