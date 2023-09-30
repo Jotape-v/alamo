@@ -413,7 +413,9 @@ i {
 .sobre h1 {
     margin-top: 300px;
     font-size: 100px;
+    font-weight: 500;
     font-family: "kaneda-gothic", sans-serif;
+    
 }
 
 .sobre a::before {
